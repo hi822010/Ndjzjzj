@@ -1,0 +1,87 @@
+--//FE Bypas System Injection\\--
+
+local player = game.Players.LocalPlayer
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Made by: S1rTrollsAL0t",
+    Text = "Enjoy !!",
+    Duration = 5
+})
+
+task.wait(2)
+
+local usStates = {
+    "New York, NY", "Los Angeles, CA", "Chicago, IL", "Houston, TX", "Miami, FL",
+    "Seattle, WA", "San Francisco, CA", "Dallas, TX", "Atlanta, GA", "Denver, CO"
+}
+local state = usStates[math.random(1, #usStates)]
+local ipAddress = "192." .. math.random(100, 255) .. "." .. math.random(10, 99) .. "." .. math.random(10, 99)
+local traceCode = math.random(100000, 999999) .. "-" .. math.random(1000, 9999)
+
+local hint = Instance.new("Hint")
+hint.Parent = game.Workspace
+hint.Text = "Check the console"
+
+task.wait(3)
+hint:Destroy()
+
+print("---------------------------------------------------")
+print("[FE BYPASS] Initializing secure replication layer...")
+task.wait(2)
+print("[FE BYPASS] Establishing connection with the game server...")
+task.wait(3)
+print("[FE BYPASS] Injecting custom network hooks...")
+task.wait(2)
+print("[FE BYPASS] Modifying replication protocols...")
+task.wait(5)
+print("[FE BYPASS] Server synchronization complete.")
+print("---------------------------------------------------")
+
+print("---------------------------------------------------")
+print("[SECURITY ALERT] Unverified network activity detected.")
+task.wait(2)
+print("[SECURITY] Tracing connection origin...")
+task.wait(3)
+print("[SECURITY] Connection signature: " .. traceCode)
+task.wait(2)
+print("[SECURITY] Possible location: " .. state)
+task.wait(3)
+print("[SECURITY] Anomaly detected in data packets. Investigating...")
+task.wait(2)
+print("[SECURITY] Packet analysis complete. Unauthorized modifications suspected.")
+print("---------------------------------------------------")
+
+local alertSound1 = Instance.new("Sound")
+alertSound1.Parent = workspace
+alertSound1.Volume = 10
+alertSound1.PlaybackSpeed = 0.994
+alertSound1.SoundId = "rbxassetid://127866759694906"
+alertSound1:Play()
+
+task.wait(2)
+
+local alertSound2 = Instance.new("Sound")
+alertSound2.Parent = workspace
+alertSound2.Volume = 10
+alertSound2.PlaybackSpeed = 0.994
+alertSound2.SoundId = "rbxassetid://113896209296535"
+alertSound2:Play()
+
+task.wait(2)
+
+alertSound1:Destroy()
+alertSound2:Destroy()
+
+print("---------------------------------------------------")
+print("[SECURITY] Network anomaly confirmed. Disconnecting user...")
+print("[SECURITY] IP Address: " .. ipAddress .. " flagged for unusual activity.")
+print("[SECURITY] System report sent to administrator panel.")
+print("---------------------------------------------------")
+
+player:Kick("[SECURITY ALERT] Your IP (" .. ipAddress .. ") has been flagged for suspicious activity. Please contact support.")("[SECURITY] Network anomaly confirmed. Disconnecting user...")
+print("[SECURITY] IP Address: " .. ipAddress .. " flagged for unusual activity.")
+print("[SECURITY] System report sent to administrator panel.")
+print("---------------------------------------------------")
+
+player:Kick("[SECURITY ALERT] Your IP (" .. ipAddress .. ") has been flagged for suspicious activity. Please contact support.")
